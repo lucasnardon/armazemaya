@@ -158,3 +158,31 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    font-weight: 400;
+  }
+}
+
+@utility eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+}
+
+@utility paper {
+  background-color: var(--sand);
+  background-image: radial-gradient(
+      circle at 20% 15%,
+      color-mix(in oklab, var(--clay) 8%, transparent),
+      transparent 55%
+    ),
+    radial-gradient(circle at 85% 80%, color-mix(in oklab, var(--moss) 8%, transparent), transparent 60%);
+}
