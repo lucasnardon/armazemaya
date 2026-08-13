@@ -208,7 +208,7 @@ function Index() {
 
             <img
               src={sinergiaRotuloImg}
-              alt="Verso do rótulo da Sinergia de Ervas com modo de uso e composição"
+              alt="Frasco âmbar da Sinergia de Ervas sobre pedra musgosa na mata, em luz dourada"
               width={1080}
               height={1080}
               loading="lazy"
