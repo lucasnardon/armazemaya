@@ -2,19 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import logoAsset from "@/assets/aya-logo.png.asset.json";
 import heroAsset from "@/assets/aya-hero-wide.jpg.asset.json";
-import sobreAsset from "@/assets/aya-sinergia-verso.png.asset.json";
-import sinergiaAsset from "@/assets/aya-sinergia.png.asset.json";
-import sinergiaRotuloAsset from "@/assets/aya-sinergia-rotulo.png.asset.json";
-import repelenteAsset from "@/assets/aya-repelente.png.asset.json";
+import sobreImg from "@/assets/gen-sobre.jpg";
+import sinergiaImg from "@/assets/gen-sinergia.jpg";
+import sinergiaRotuloImg from "@/assets/gen-detalhe.jpg";
+import repelenteImg from "@/assets/gen-repelente.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
 
 const logoImg = logoAsset.url;
 const heroImg = heroAsset.url;
-const sobreImg = sobreAsset.url;
-const sinergiaImg = sinergiaAsset.url;
-const sinergiaRotuloImg = sinergiaRotuloAsset.url;
-const repelenteImg = repelenteAsset.url;
 const preparoImg = preparoAsset.url;
 const ctaImg = ctaAsset.url;
 
