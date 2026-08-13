@@ -1,13 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import logoAsset from "@/assets/aya-logo.png.asset.json";
-import heroAsset from "@/assets/aya-hero.png.asset.json";
+import heroAsset from "@/assets/aya-hero-wide.jpg.asset.json";
 import sobreAsset from "@/assets/aya-sinergia-verso.png.asset.json";
 import sinergiaAsset from "@/assets/aya-sinergia.png.asset.json";
 import sinergiaRotuloAsset from "@/assets/aya-sinergia-rotulo.png.asset.json";
 import repelenteAsset from "@/assets/aya-repelente.png.asset.json";
-import preparoAsset from "@/assets/aya-repelente-lote.png.asset.json";
-import ctaAsset from "@/assets/aya-marca.png.asset.json";
+import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
+import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
 
 const logoImg = logoAsset.url;
 const heroImg = heroAsset.url;
@@ -65,8 +65,8 @@ function Index() {
       <section className="relative min-h-[92vh] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Dois frascos da Sinergia de Ervas do Armazém Aya em luz natural, entre árvores"
-          width={1080}
+          alt="Dois frascos da Sinergia de Ervas na mata, em luz dourada de fim de tarde"
+          width={1920}
           height={1080}
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -309,9 +309,9 @@ function Index() {
 
           <img
             src={preparoImg}
-            alt="Lote de frascos do Repelente Natural Bifásico sobre tábua de madeira e grama"
-            width={1080}
-            height={1350}
+            alt="Frascos do Repelente Natural Bifásico sobre madeira rústica na grama, em luz dourada"
+            width={1920}
+            height={1080}
             loading="lazy"
             className="mt-14 h-[280px] w-full object-cover sm:h-[420px]"
           />
@@ -357,13 +357,13 @@ function Index() {
       <section className="relative overflow-hidden">
         <img
           src={ctaImg}
-          alt="Marca Armazém Aya sobre fundo texturizado de terra"
-          width={1080}
-          height={1350}
+          alt="Sinergia de Ervas e Repelente Natural juntos sobre mesa de madeira, com ervas frescas"
+          width={1920}
+          height={1080}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/85" />
+        <div className="absolute inset-0 bg-background/80" />
         <div className="relative mx-auto max-w-2xl px-6 py-28 text-center sm:py-40">
           <h2 className="text-3xl leading-tight sm:text-4xl">
             Escolha o que faz sentido para o seu cotidiano.
