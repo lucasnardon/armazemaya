@@ -4,7 +4,7 @@ import logoAsset from "@/assets/aya-logo.png.asset.json";
 import heroAsset from "@/assets/aya-hero-wide.jpg.asset.json";
 import sobreImg from "@/assets/gen-sobre.jpg";
 import sinergiaImg from "@/assets/gen-sinergia.jpg";
-import sinergiaRotuloImg from "@/assets/gen-sinergia-detalhe.jpg";
+import sinergiaRotuloImg from "@/assets/gen-detalhe.jpg";
 import repelenteImg from "@/assets/gen-repelente.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
