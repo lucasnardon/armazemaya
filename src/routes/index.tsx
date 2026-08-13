@@ -1,11 +1,22 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroImg from "@/assets/hero.jpg";
-import sobreImg from "@/assets/sobre.jpg";
-import sinergiaImg from "@/assets/sinergia.jpg";
-import repelenteImg from "@/assets/repelente.jpg";
-import preparoImg from "@/assets/preparo.jpg";
-import ctaImg from "@/assets/cta.jpg";
+import logoAsset from "@/assets/aya-logo.png.asset.json";
+import heroAsset from "@/assets/aya-hero.png.asset.json";
+import sobreAsset from "@/assets/aya-sinergia-verso.png.asset.json";
+import sinergiaAsset from "@/assets/aya-sinergia.png.asset.json";
+import sinergiaRotuloAsset from "@/assets/aya-sinergia-rotulo.png.asset.json";
+import repelenteAsset from "@/assets/aya-repelente.png.asset.json";
+import preparoAsset from "@/assets/aya-repelente-lote.png.asset.json";
+import ctaAsset from "@/assets/aya-marca.png.asset.json";
+
+const logoImg = logoAsset.url;
+const heroImg = heroAsset.url;
+const sobreImg = sobreAsset.url;
+const sinergiaImg = sinergiaAsset.url;
+const sinergiaRotuloImg = sinergiaRotuloAsset.url;
+const repelenteImg = repelenteAsset.url;
+const preparoImg = preparoAsset.url;
+const ctaImg = ctaAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -54,16 +65,21 @@ function Index() {
       <section className="relative min-h-[92vh] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Frascos âmbar artesanais sobre madeira com ervas frescas e tecido de linho"
-          width={1600}
-          height={1200}
+          alt="Dois frascos da Sinergia de Ervas do Armazém Aya em luz natural, entre árvores"
+          width={1080}
+          height={1080}
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-earth/55" />
         <div className="relative mx-auto flex min-h-[92vh] max-w-3xl flex-col items-center justify-center px-6 py-24 text-center">
-          <h1 className="text-4xl leading-[1.05] tracking-[0.14em] text-background sm:text-6xl">
-            ARMAZÉM AYA
-          </h1>
+          <img
+            src={logoImg}
+            alt="Logotipo Armazém Aya"
+            width={720}
+            height={720}
+            className="w-40 sm:w-52"
+          />
+          <h1 className="sr-only">Armazém Aya</h1>
           <p className="mt-5 text-[0.7rem] tracking-[0.3em] uppercase text-background/80">
             Conscientes <Dot /> Artesanais <Dot /> Naturais
           </p>
@@ -110,9 +126,9 @@ function Index() {
           <div className="order-1 md:order-2">
             <img
               src={sobreImg}
-              alt="Mãos amarrando um maço de ervas frescas sobre mesa de madeira"
-              width={1200}
-              height={1408}
+              alt="Frasco da Sinergia de Ervas segurado na mão, com o verso do rótulo em evidência"
+              width={1080}
+              height={1080}
               loading="lazy"
               className="h-full w-full object-cover"
             />
@@ -140,9 +156,9 @@ function Index() {
         >
           <img
             src={sinergiaImg}
-            alt="Frasco âmbar de 100 ml com válvula spray preta sobre linho, ao lado de folhas verdes"
-            width={1008}
-            height={1200}
+            alt="Frasco âmbar de 100 ml da Sinergia de Ervas com rótulo verde e laço de sisal"
+            width={1080}
+            height={1080}
             loading="lazy"
             className="h-full w-full object-cover"
           />
@@ -194,6 +210,15 @@ function Index() {
               </p>
             </div>
 
+            <img
+              src={sinergiaRotuloImg}
+              alt="Verso do rótulo da Sinergia de Ervas com modo de uso e composição"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              className="mt-8 h-56 w-full object-cover sm:h-64"
+            />
+
             <ShopeeButton href={SHOPEE_SINERGIA} className="mt-9 w-full sm:w-auto" />
           </div>
         </article>
@@ -205,9 +230,9 @@ function Index() {
         >
           <img
             src={repelenteImg}
-            alt="Frasco âmbar com spray ao lado de cravo-da-índia, canela e óleo de gergelim"
-            width={1008}
-            height={1200}
+            alt="Frasco do Repelente Natural Bifásico do Armazém Aya sobre tronco de madeira"
+            width={1062}
+            height={1416}
             loading="lazy"
             className="h-full w-full object-cover md:order-2"
           />
@@ -284,9 +309,9 @@ function Index() {
 
           <img
             src={preparoImg}
-            alt="Pote de vidro com ervas em maceração sobre prateleira de madeira"
-            width={1600}
-            height={912}
+            alt="Lote de frascos do Repelente Natural Bifásico sobre tábua de madeira e grama"
+            width={1080}
+            height={1350}
             loading="lazy"
             className="mt-14 h-[280px] w-full object-cover sm:h-[420px]"
           />
@@ -332,13 +357,13 @@ function Index() {
       <section className="relative overflow-hidden">
         <img
           src={ctaImg}
-          alt="Ramos de ervas frescas sobre tecido de linho cru com luz natural"
-          width={1600}
-          height={912}
+          alt="Marca Armazém Aya sobre fundo texturizado de terra"
+          width={1080}
+          height={1350}
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-background/85" />
         <div className="relative mx-auto max-w-2xl px-6 py-28 text-center sm:py-40">
           <h2 className="text-3xl leading-tight sm:text-4xl">
             Escolha o que faz sentido para o seu cotidiano.
