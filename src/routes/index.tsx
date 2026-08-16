@@ -152,14 +152,19 @@ function Index() {
           id="sinergia"
           className="mx-auto mt-20 grid max-w-6xl scroll-mt-10 items-center gap-12 bg-card p-6 sm:p-10 md:grid-cols-2 md:gap-16"
         >
-          <img
-            src={sinergiaImg}
-            alt="Frasco âmbar de 100 ml da Sinergia de Ervas com rótulo verde e laço de sisal"
-            width={1080}
-            height={1080}
-            loading="lazy"
-            className="h-full w-full object-cover"
-          />
+          <div className="relative">
+            <img
+              src={sinergiaImg}
+              alt="Frasco âmbar de 100 ml da Sinergia de Ervas com rótulo verde e laço de sisal"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
           <div>
             <p className="eyebrow">Produto 01</p>
             <h3 className="mt-4 text-3xl leading-tight">Sinergia de Ervas</h3>
