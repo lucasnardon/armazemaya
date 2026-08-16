@@ -213,6 +213,7 @@ function Index() {
               </p>
             </div>
 
+          <div className="relative">
             <img
               src={sinergiaRotuloImg}
               alt="Frasco âmbar da Sinergia de Ervas sobre pedra musgosa na mata, em luz dourada"
@@ -221,6 +222,10 @@ function Index() {
               loading="lazy"
               className="mt-8 h-56 w-full object-cover sm:h-64"
             />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
 
             <ShopeeButton href={SHOPEE_SINERGIA} className="mt-9 w-full sm:w-auto" />
           </div>
