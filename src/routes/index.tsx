@@ -152,14 +152,19 @@ function Index() {
           id="sinergia"
           className="mx-auto mt-20 grid max-w-6xl scroll-mt-10 items-center gap-12 bg-card p-6 sm:p-10 md:grid-cols-2 md:gap-16"
         >
-          <img
-            src={sinergiaImg}
-            alt="Frasco âmbar de 100 ml da Sinergia de Ervas com rótulo verde e laço de sisal"
-            width={1080}
-            height={1080}
-            loading="lazy"
-            className="h-full w-full object-cover"
-          />
+          <div className="relative">
+            <img
+              src={sinergiaImg}
+              alt="Frasco âmbar de 100 ml da Sinergia de Ervas com rótulo verde e laço de sisal"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
           <div>
             <p className="eyebrow">Produto 01</p>
             <h3 className="mt-4 text-3xl leading-tight">Sinergia de Ervas</h3>
@@ -208,6 +213,7 @@ function Index() {
               </p>
             </div>
 
+          <div className="relative">
             <img
               src={sinergiaRotuloImg}
               alt="Frasco âmbar da Sinergia de Ervas sobre pedra musgosa na mata, em luz dourada"
@@ -216,6 +222,10 @@ function Index() {
               loading="lazy"
               className="mt-8 h-56 w-full object-cover sm:h-64"
             />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
 
             <ShopeeButton href={SHOPEE_SINERGIA} className="mt-9 w-full sm:w-auto" />
           </div>
@@ -226,14 +236,19 @@ function Index() {
           id="repelente"
           className="mx-auto mt-12 grid max-w-6xl scroll-mt-10 items-center gap-12 bg-card p-6 sm:p-10 md:grid-cols-2 md:gap-16"
         >
-          <img
-            src={repelenteImg}
-            alt="Frasco do Repelente Natural Bifásico do Armazém Aya sobre tronco de madeira"
-            width={1062}
-            height={1416}
-            loading="lazy"
-            className="h-full w-full object-cover md:order-2"
-          />
+          <div className="relative md:order-2">
+            <img
+              src={repelenteImg}
+              alt="Frasco do Repelente Natural Bifásico do Armazém Aya sobre tronco de madeira"
+              width={1062}
+              height={1416}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
           <div className="md:order-1">
             <p className="eyebrow">Produto 02</p>
             <h3 className="mt-4 text-3xl leading-tight">Repelente Natural</h3>
@@ -404,38 +419,42 @@ function Index() {
                 Produtos que convidam a viver com consciência.
               </p>
             </div>
-            <div className="grid gap-10 sm:grid-cols-2">
-              <div>
-                <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
-                  Onde nos encontrar
-                </p>
-                <ul className="mt-4 space-y-2 text-sm text-background/85">
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      Shopee
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      WhatsApp
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
-                  Contato e informações
-                </p>
-                <ul className="mt-4 space-y-2 text-sm text-background/85">
-                  <li>Contato: a preencher</li>
-                  <li>Informações legais: a preencher</li>
-                </ul>
-              </div>
+            <div>
+              <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
+                Onde nos encontrar
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-background/85">
+                <li>
+                  <a
+                    href="https://www.instagram.com/armazem.aya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://shopee.com.br/armazem.aya?categoryId=100636&entryPoint=ShopByPDP&itemId=22999667501"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    Shopee
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/5551996893509"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    WhatsApp
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <p className="mt-16 border-t border-background/20 pt-6 text-xs text-background/60">
