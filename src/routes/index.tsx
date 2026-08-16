@@ -419,38 +419,42 @@ function Index() {
                 Produtos que convidam a viver com consciência.
               </p>
             </div>
-            <div className="grid gap-10 sm:grid-cols-2">
-              <div>
-                <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
-                  Onde nos encontrar
-                </p>
-                <ul className="mt-4 space-y-2 text-sm text-background/85">
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      Shopee
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="transition-opacity hover:opacity-70">
-                      WhatsApp
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
-                  Contato e informações
-                </p>
-                <ul className="mt-4 space-y-2 text-sm text-background/85">
-                  <li>Contato: a preencher</li>
-                  <li>Informações legais: a preencher</li>
-                </ul>
-              </div>
+            <div>
+              <p className="text-[0.7rem] tracking-[0.28em] uppercase text-background/60">
+                Onde nos encontrar
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-background/85">
+                <li>
+                  <a
+                    href="https://www.instagram.com/armazem.aya/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://shopee.com.br/armazem.aya?categoryId=100636&entryPoint=ShopByPDP&itemId=22999667501"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    Shopee
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://wa.me/5551996893509"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    WhatsApp
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
           <p className="mt-16 border-t border-background/20 pt-6 text-xs text-background/60">
