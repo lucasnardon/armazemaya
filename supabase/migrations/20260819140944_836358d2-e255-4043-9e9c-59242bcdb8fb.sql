@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS public.site_content CASCADE; DROP TABLE IF EXISTS public.user_roles CASCADE; DROP FUNCTION IF EXISTS public.claim_admin() CASCADE; DROP FUNCTION IF EXISTS public.has_role(uuid, public.app_role) CASCADE; DROP FUNCTION IF EXISTS public.update_updated_at_column() CASCADE; DROP TYPE IF EXISTS public.app_role CASCADE;
