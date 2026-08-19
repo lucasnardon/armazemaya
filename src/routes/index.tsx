@@ -10,9 +10,10 @@ import pastaImg from "@/assets/gen-pasta.jpg";
 import pastaUsoImg from "@/assets/gen-pasta-uso.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
+import heroTresProdutos from "@/assets/aya-hero-tres-produtos.jpg";
 
 const logoImg = logoAsset.url;
-const heroImg = heroAsset.url;
+const heroImg = heroTresProdutos;
 const preparoImg = preparoAsset.url;
 const ctaImg = ctaAsset.url;
 
@@ -67,7 +68,7 @@ function Index() {
       <section className="relative min-h-[92vh] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Dois frascos da Sinergia de Ervas na mata, em luz dourada de fim de tarde"
+          alt="Três produtos do Armazém Aya — Sinergia de Ervas, Repelente Natural e Pasta Artesanal — sobre madeira rústica na mata em luz dourada"
           width={1920}
           height={1080}
           className="absolute inset-0 h-full w-full object-cover"
