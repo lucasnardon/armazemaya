@@ -6,6 +6,8 @@ import sobreImg from "@/assets/gen-sobre.jpg";
 import sinergiaImg from "@/assets/gen-sinergia.jpg";
 import sinergiaRotuloImg from "@/assets/gen-sinergia-apresentacao.jpg";
 import repelenteImg from "@/assets/gen-repelente.jpg";
+import pastaImg from "@/assets/gen-pasta.jpg";
+import pastaUsoImg from "@/assets/gen-pasta-uso.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
 
@@ -38,6 +40,8 @@ const SHOPEE_SINERGIA =
   "https://shopee.com.br/Spray-Energ%C3%A9tico-100-Natural-para-Aura-e-Ambiente-Mil-Folhas-Manjeric%C3%A3o-e-Lavanda-i.1415725571.22999667501?extraParams=%7B%22display_model_id%22%3A149794391501%2C%22model_selection_logic%22%3A3%7D";
 const SHOPEE_REPELENTE =
   "https://shopee.com.br/Repelente-100-Natural-de-Cravo-Canela-e-%C3%93leo-de-Gergelim-Prote%C3%A7%C3%A3o-Corporal-e-Energ%C3%A9tica--i.1415725571.58201221074?extraParams=%7B%22display_model_id%22%3A228795753644%2C%22model_selection_logic%22%3A3%7D";
+const SHOPEE_PASTA =
+  "https://shopee.com.br/armazem.aya?categoryId=100636&entryPoint=ShopByPDP&itemId=22999667501";
 
 function Dot() {
   return <span className="mx-2 text-clay">•</span>;
@@ -297,6 +301,79 @@ function Index() {
             </div>
 
             <ShopeeButton href={SHOPEE_REPELENTE} className="mt-9 w-full sm:w-auto" />
+          </div>
+        </article>
+
+        {/* Produto 3 */}
+        <article
+          id="pasta"
+          className="mx-auto mt-12 grid max-w-6xl scroll-mt-10 items-center gap-12 bg-card p-6 sm:p-10 md:grid-cols-2 md:gap-16"
+        >
+          <div className="relative">
+            <img
+              src={pastaImg}
+              alt="Pote de Pasta Artesanal de Semente de Girassol sobre tábua de madeira entre folhas e ervas"
+              width={1080}
+              height={1080}
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+              Imagem meramente ilustrativa
+            </span>
+          </div>
+          <div>
+            <p className="eyebrow">Produto 03</p>
+            <h3 className="mt-4 text-3xl leading-tight">Pasta Artesanal</h3>
+            <p className="mt-3 text-sm italic text-olive">
+              Semente de girassol • Gergelim preto e especiarias
+            </p>
+            <div className="mt-7 space-y-4 text-[0.95rem] leading-relaxed text-muted-foreground">
+              <p>
+                Uma pasta artesanal feita a partir de sementes de girassol, preparada em pequenos
+                lotes.
+              </p>
+              <p>
+                Um alimento simples e versátil para fazer parte do cotidiano, valorizando
+                ingredientes, preparo artesanal e sabor.
+              </p>
+            </div>
+
+            <p className="mt-8 text-[0.7rem] tracking-[0.22em] uppercase text-earth">
+              Girassol <Dot /> Gergelim preto <Dot /> Especiarias
+            </p>
+
+            <div className="mt-8 border-t border-border pt-6">
+              <p className="eyebrow">Como utilizar</p>
+              <p className="mt-3 text-[0.95rem] leading-relaxed text-muted-foreground">
+                Consuma em tapiocas, torradas, pães, frutas, saladas, vitaminas e como base para
+                molhos.
+              </p>
+            </div>
+
+            <div className="mt-6 border-t border-border pt-6">
+              <p className="eyebrow">Apresentação</p>
+              <p className="mt-3 font-display text-xl">Pote de vidro — 210 g</p>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                Pode ocorrer a separação do óleo; basta misturar.
+              </p>
+            </div>
+
+            <div className="relative">
+              <img
+                src={pastaUsoImg}
+                alt="Pasta Artesanal espalhada sobre uma fatia de pão com sementes de girassol"
+                width={1080}
+                height={1080}
+                loading="lazy"
+                className="mt-8 h-56 w-full object-cover sm:h-64"
+              />
+              <span className="pointer-events-none absolute bottom-2 right-2 text-[0.5rem] tracking-wide text-background/90 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)]">
+                Imagem meramente ilustrativa
+              </span>
+            </div>
+
+            <ShopeeButton href={SHOPEE_PASTA} className="mt-9 w-full sm:w-auto" />
           </div>
         </article>
       </section>
