@@ -6,6 +6,8 @@ import sobreImg from "@/assets/gen-sobre.jpg";
 import sinergiaImg from "@/assets/gen-sinergia.jpg";
 import sinergiaRotuloImg from "@/assets/gen-sinergia-apresentacao.jpg";
 import repelenteImg from "@/assets/gen-repelente.jpg";
+import pastaImg from "@/assets/gen-pasta.jpg";
+import pastaUsoImg from "@/assets/gen-pasta-uso.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
 
@@ -38,6 +40,8 @@ const SHOPEE_SINERGIA =
   "https://shopee.com.br/Spray-Energ%C3%A9tico-100-Natural-para-Aura-e-Ambiente-Mil-Folhas-Manjeric%C3%A3o-e-Lavanda-i.1415725571.22999667501?extraParams=%7B%22display_model_id%22%3A149794391501%2C%22model_selection_logic%22%3A3%7D";
 const SHOPEE_REPELENTE =
   "https://shopee.com.br/Repelente-100-Natural-de-Cravo-Canela-e-%C3%93leo-de-Gergelim-Prote%C3%A7%C3%A3o-Corporal-e-Energ%C3%A9tica--i.1415725571.58201221074?extraParams=%7B%22display_model_id%22%3A228795753644%2C%22model_selection_logic%22%3A3%7D";
+const SHOPEE_PASTA =
+  "https://shopee.com.br/armazem.aya?categoryId=100636&entryPoint=ShopByPDP&itemId=22999667501";
 
 function Dot() {
   return <span className="mx-2 text-clay">•</span>;
