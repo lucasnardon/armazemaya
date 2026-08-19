@@ -10,9 +10,10 @@ import pastaImg from "@/assets/gen-pasta.jpg";
 import pastaUsoImg from "@/assets/gen-pasta-uso.jpg";
 import preparoAsset from "@/assets/aya-preparo-wide.jpg.asset.json";
 import ctaAsset from "@/assets/aya-cta-wide.jpg.asset.json";
+import heroTresProdutos from "@/assets/aya-hero-tres-produtos.jpg";
 
 const logoImg = logoAsset.url;
-const heroImg = heroAsset.url;
+const heroImg = heroTresProdutos;
 const preparoImg = preparoAsset.url;
 const ctaImg = ctaAsset.url;
 
